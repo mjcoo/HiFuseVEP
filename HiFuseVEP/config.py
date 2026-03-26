@@ -21,9 +21,7 @@ class Config:
     # 特征配置
     FEATURE_CONFIG = {
         'active_features': ['protT5local', 'protT5global','esm1b_local','esm1b_global','esmc_pdb_local', 'esmc_pdb_global'],
-        #'active_features': [ 'esmc_global', 'esmc_pdb_global', 'protT5global'],
-        #'active_features': ['esmc_pdb_local', 'esmc_pdb_global'],  # 激活的特征列表
-        #'active_features': ['esmc_pdb_global'],  # 激活的特征列表
+
         'feature_info': {
             'esm1b_local': {'dim': 1280, 'path': 'train_esm1b_local.npy'},
             'esm1b_global': {'dim': 1280, 'path': 'train_esm1b_global.npy'},
@@ -38,9 +36,7 @@ class Config:
     # 特征配置
     TEST_FEATURE_CONFIG = {
         'active_features': ['protT5local', 'protT5global','esm1b_local','esm1b_global','esmc_pdb_local', 'esmc_pdb_global'],
-        #'active_features': [ 'esmc_global', 'esmc_pdb_global',  'protT5global'],
-        #'active_features': ['esmc_pdb_local', 'esmc_pdb_global'],  # 激活的特征列表
-        #'active_features': ['esmc_pdb_global'],  # 激活的特征列表
+
         'feature_info': {
             'esm1b_local': {'dim': 1280, 'path': 'test_esm1b_local.npy'},
             'esm1b_global': {'dim': 1280, 'path': 'test_esm1b_global.npy'},
@@ -52,38 +48,7 @@ class Config:
             'protT5global': {'dim': 1024, 'path': 'test_protT5global.npy'},
         }
     }
-    enssm_mmmamba = {
-            'mm_input_size': 512,
-            'mm_output_sizes': [512],
-            'dropout': 0.1,
-            'd_ffn': 1024 ,
-            'num_layers': 1,
-            'activation': 'GELU',
-            'causal': False,
 
-            'mamba_config':{
-                'd_state': 12 ,
-                'expand': 4 ,
-                'd_conv': 4 ,
-                'bidirectional': True
-            }       
-    }
-    cossm_mmmamba = {
-            'mm_input_size': 256,
-            'mm_output_sizes': [256],
-            'dropout': 0.1,
-            'd_ffn': 1024 ,
-            'num_layers': 1,
-            'activation': 'GELU',
-            'causal': False,
-
-            'mamba_config':{
-                'd_state': 12 ,
-                'expand': 4 ,
-                'd_conv': 4 ,
-                'bidirectional': True
-            }       
-    }
        
     # 模型参数优化
     MODEL_CONFIG = {
