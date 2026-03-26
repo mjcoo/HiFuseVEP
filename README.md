@@ -1,6 +1,6 @@
     # Protein Sequence Classification Model
 
-This project implements a deep learning-based protein sequence classification model using various protein features such as ProtT5, ESM, and others for sequence classification tasks.
+This project implements a deep learning-based protein sequence classification model using various protein features such as ProtT5, ESM, and others for VEP tasks.
 <img width="1757" height="908" alt="image" src="https://github.com/user-attachments/assets/fd389ee6-acf7-49ad-9c4b-5d966efcbddf" />
 
 ## Project Overview
